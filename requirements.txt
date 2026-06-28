@@ -1,0 +1,18 @@
+# Airdrop Intelligence Bot — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Google Sheets integration
+gspread==6.1.2
+google-auth==2.29.0
+google-auth-oauthlib==1.2.0
+
+# HTTP requests + HTML scraping
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.2.2
+
+# Environment variable loading (local dev)
+python-dotenv==1.0.1
+
+# Optional: faster HTML parsing backend
+html5lib==1.1
