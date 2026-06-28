@@ -27,12 +27,11 @@ jobs:
       - name: Run Project Discovery
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
-          SHEET_ID:            ${{ secrets.SHEET_ID }}
+          SHEET_ID:            ${{ secrets.SPREADSHEET_ID }}
           TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID:    ${{ secrets.TELEGRAM_CHAT_ID }}
           TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
         run: |
-          cd src
           python project_discovery.py
 
       - name: Upload logs on failure
